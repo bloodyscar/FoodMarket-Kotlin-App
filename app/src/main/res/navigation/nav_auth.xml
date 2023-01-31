@@ -27,6 +27,7 @@
         <action android:id="@+id/action_continue"
             app:destination="@+id/fragmentSignupAddress"/>
 
+
     </fragment>
 
     <fragment
@@ -38,6 +39,15 @@
         <action android:id="@+id/action_signUpNow"
 
             app:destination="@+id/fragmentSignupSuccess"/>
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
 
     <fragment

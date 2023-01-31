@@ -18,7 +18,7 @@
         />
 
     <EditText
-        android:id="@+id/edtFullname"
+        android:id="@+id/edtPhone"
         style="@style/EditText.PoppinsLight14sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtAddress"
         style="@style/EditText.PoppinsLight14sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         />
 
     <EditText
-        android:id="@+id/edtPassword"
+        android:id="@+id/edtHouseNo"
         style="@style/EditText.PoppinsLight14sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         />
 
     <EditText
-        android:id="@+id/editCity"
+        android:id="@+id/edtCity"
         style="@style/EditText.PoppinsLight14sp020202"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,5 +84,11 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/signup_now"
         app:cornerRadius="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.foodmarketkotlinpractice.R
 import com.example.foodmarketkotlinpractice.databinding.FragmentOrderBinding
 import com.google.android.material.tabs.TabLayoutMediator
+
 
 class OrderFragment : Fragment() {
 
@@ -55,6 +57,12 @@ class OrderFragment : Fragment() {
             tab.text = resources.getString(TAB_TITLES[position])
         }.attach()
 
+        val mActionBarToolbar = view.findViewById<Toolbar>(R.id.toolbar)
+
+        (activity as AppCompatActivity?)!!.setSupportActionBar(mActionBarToolbar)
+        (activity as AppCompatActivity?)!!.supportActionBar?.title = "Your Orders"
+        (activity as AppCompatActivity?)!!.supportActionBar?.subtitle = "Wait for the best meal"
+
 
     }
 
@@ -62,4 +70,5 @@ class OrderFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

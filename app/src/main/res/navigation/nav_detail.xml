@@ -19,5 +19,14 @@
         android:id="@+id/paymentFragment"
         android:name="com.example.foodmarketkotlinpractice.ui.detail.PaymentFragment"
         android:label="fragment_payment"
-        tools:layout="@layout/fragment_payment" />
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_payment_success"
+            app:destination="@id/paymentSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentSuccessFragment"
+        android:name="com.example.foodmarketkotlinpractice.ui.detail.PaymentSuccessFragment"
+        android:label="fragment_payment_success"
+        tools:layout="@layout/fragment_payment_success" />
 </navigation>

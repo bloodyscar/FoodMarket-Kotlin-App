@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import com.example.foodmarketkotlinpractice.R
 import com.example.foodmarketkotlinpractice.databinding.FragmentSignupBinding
 import com.example.foodmarketkotlinpractice.ui.auth.AuthActivity
 
 class SignupFragment : Fragment() {
-    private lateinit var binding : FragmentSignupBinding
+    private lateinit var binding: FragmentSignupBinding
 
 
     override fun onCreateView(
@@ -30,8 +29,20 @@ class SignupFragment : Fragment() {
 
 
         binding.btnContinue.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_continue)
+            val mBundle = Bundle()
+            val name = binding.edtFullname.text
+            val password = binding.edtPassword.text
+            val email = binding.edtEmail.text
+
+            val actionContinue = SignupFragmentDirections.actionContinue(
+                name.toString(),
+                password.toString(),
+                email.toString()
+            )
+
+            Navigation.findNavController(it).navigate(actionContinue)
             (activity as AuthActivity).toolbarSignupAddress()
+
         }
     }
 

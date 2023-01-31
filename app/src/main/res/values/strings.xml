@@ -23,6 +23,11 @@
     <string name="type_your_fullname">Type your full name</string>
     <string name="cont">Continue</string>
     <string name="account">Account</string>
+    <string name="made_order">You’ve Made Order</string>
+    <string name="order_other_foods">Order Other Foods</string>
+    <string name="view_my_order">View My Order</string>
+    <string name="desc_made_order">Just stay at home while we are
+preparing your best foods</string>
     <string name="checkout_now">Checkout Now</string>
     <string name="add_photo">Add Photo</string>
     <string name="myname">Adit H.</string>

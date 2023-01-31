@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.foodmarketkotlinpractice.R
 import com.example.foodmarketkotlinpractice.data.entity.OrderModel
 
@@ -29,6 +30,8 @@ class InProgressAdapter(private val listData : List<OrderModel>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val data = listData[position]
+        holder.title.text = data.title
+        holder.jumlah.text = data.jumlah.toString()  + " Items"
     }
 }

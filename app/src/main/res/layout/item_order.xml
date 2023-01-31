@@ -45,7 +45,7 @@
         style="@style/TextView.Poppins14sp020202"
         android:textSize="13sp"
         android:textColor="@color/grey"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="@string/harga"
         app:layout_constraintStart_toEndOf="@+id/tvJumlahItem"
