@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="24dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivPoster"
+        android:src="@drawable/iv_sample_product"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextView.PoppinsMedium16sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_product" />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            style="@style/TextView.PoppinsMedium14sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/rbFood"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:theme="@style/RatingBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

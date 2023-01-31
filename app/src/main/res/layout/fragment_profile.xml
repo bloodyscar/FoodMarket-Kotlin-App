@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="26dp"
+    android:background="@color/white"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_picture_empty"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myname"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        style="@style/TextView.PoppinsMedium22sp020202"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/myemail"
+        style="@style/TextView.PoppinsMedium14sp020202"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsProfile"
+        android:layout_marginTop="24dp"
+        android:elevation="3dp"
+        android:background="@color/white"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:layout_width="match_parent"
+        style="@style/TabLayout"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Food Market Kotlin Practice</string>
+    <string name="food_market">Food Market</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_your_email">Type your email address</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="payment">Payment</string>
+    <string name="my_address">Setra Duta Palima</string>
+    <string name="my_house_number">A5 Hook</string>
+    <string name="my_city">Bandung</string>
+    <string name="in_progress">In Progress</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="deserve">You deserve better meal</string>
+    <string name="register_and_eat">Register and eat</string>
+    <string name="type_your_password">Type your password</string>
+    <string name="find_your_best_ever_meal">Find your best ever meal</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="type_your_fullname">Type your full name</string>
+    <string name="cont">Continue</string>
+    <string name="account">Account</string>
+    <string name="checkout_now">Checkout Now</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="myname">Adit H.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="mynumber">087778</string>
+    <string name="myemail">adithernowo@gmail.com</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="address">Address</string>
+    <string name="type_your_phonenumber">Type your phone number</string>
+    <string name="type_your_address">Type your address</string>
+    <string name="type_your_housenumber">Type your house number</string>
+    <string name="city">City</string>
+    <string name="order_now">Order Now</string>
+    <string name="desc_food">Makanan khas Bandung yang cukup sering
+dipesan oleh anak muda dengan pola makan
+yang cukup tinggi dengan mengutamakan
+diet yang sehat dan teratur.</string>
+    <string name="house_no">House No.</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="detail_ingredients">Seledri, telur, blueberry, madu.</string>
+    <string name="select_your_city">Select your city</string>
+    <string name="total_price">Total Price</string>
+    <string name="signup_now">Sign Up Now</string>
+    <string name="completed_signup">Yeay! Completed</string>
+    <string name="find_food">Find Foods</string>
+    <string name="desc_completed_signup">Now you are able to order\nsome foods as a self-reward</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_profile">Profile</string>
+    <string name="lets_get_somefoods">Let’s get some foods</string>
+    <string name="sample_product">Cherry Healthy</string>
+    <string name="new_taste">New Taste</string>
+    <string name="popular">Popular</string>
+    <string name="name">Name</string>
+    <string name="deliver_to">Deliver To</string>
+    <string name="driver">Driver</string>
+    <string name="tax10">Tax 10%</string>
+    <string name="item_ordered">Item Ordered</string>
+    <string name="detail_transaction">Detail Transaction</string>
+    <string name="jumlah_item">14 Item</string>
+    <string name="harga">IDR 289.000</string>
+    <string name="empat">4</string>
+    <string name="ouch">Ouch! Hungry</string>
+    <string name="desc_empty_order">Seems like you have not
+ordered any food yet</string>
+    <string name="recommended">Recommended</string>
+    <item name="image_sample_product" type="drawable">@drawable/ic_sample_product2</item>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/fragmentSignin">
+    <fragment
+        android:id="@+id/fragmentSignin"
+        android:name="com.example.foodmarketkotlinpractice.ui.auth.signin.SigninFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin">
+
+        <action android:id="@+id/action_signin"
+            app:destination="@+id/fragmentSignup"/>
+
+        <action android:id="@+id/action_signup"
+            app:destination="@+id/fragmentSignup"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignup"
+        android:name="com.example.foodmarketkotlinpractice.ui.auth.signup.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+
+        <action android:id="@+id/action_continue"
+            app:destination="@+id/fragmentSignupAddress"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignupAddress"
+        android:name="com.example.foodmarketkotlinpractice.ui.auth.signup.SignupAddressFragment"
+        android:label="fragment_signupAddress"
+        tools:layout="@layout/fragment_signup_address">
+
+        <action android:id="@+id/action_signUpNow"
+
+            app:destination="@+id/fragmentSignupSuccess"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignupSuccess"
+        android:name="com.example.foodmarketkotlinpractice.ui.auth.signup.SignupSuccessFragment"
+        android:label="fragment_signup_success"
+        tools:layout="@layout/fragment_signup_success"/>
+</navigation>

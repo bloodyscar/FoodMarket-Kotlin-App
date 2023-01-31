@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.auth.signin.SigninFragment"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_picture_empty"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsMedium16sp020202"
+        android:text="@string/full_name"
+        />
+
+    <EditText
+        android:id="@+id/edtFullname"
+        style="@style/EditText.PoppinsLight14sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_fullname"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsMedium16sp020202"
+        android:text="@string/email_address"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/EditText.PoppinsLight14sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_email"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextView.PoppinsMedium16sp020202"
+        android:text="@string/password"
+        />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/EditText.PoppinsLight14sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/type_your_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cont"
+        android:layout_marginBottom="8dp"
+        app:cornerRadius="8dp"/>
+
+</LinearLayout>
